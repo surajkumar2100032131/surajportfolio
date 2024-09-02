@@ -30,9 +30,9 @@
     }
 
     .hamburger {
-		position: relative;
-		left:380px;
-		top: -30px;
+	position: relative;
+	left:330px;
+	top: -30px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
