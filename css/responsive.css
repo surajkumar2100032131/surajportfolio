@@ -5,7 +5,7 @@
         align-items: flex-start;
         padding: 0 2rem;
 	position: fixed;
-	top:-42px;
+	top:-30px;
 
     }
 
@@ -14,7 +14,7 @@
     }
 .logoimg{
 	position: relative;
-	top:30px;
+	top:25px;
 }
     /* Hide the menu items by default */
     .menu {
