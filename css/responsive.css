@@ -4,13 +4,18 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0 2rem;
+	position: fixed;
+	top:-42px;
 
     }
 
     .logo, .menu {
         padding: 0;
     }
-
+.logoimg{
+	position: relative;
+	top:30px;
+}
     /* Hide the menu items by default */
     .menu {
         width: 100%;
@@ -32,7 +37,7 @@
     .hamburger {
 	position: relative;
 	left:280px;
-	top: -50px;
+	top: -10px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
