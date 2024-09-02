@@ -9,6 +9,7 @@
 
     .logo, .menu {
         padding: 0;
+	top:15px;
     }
 
     /* Hide the menu items by default */
