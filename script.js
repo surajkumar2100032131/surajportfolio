@@ -1,3 +1,10 @@
+//manu
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
+
 //home
 var typed = new Typed(".text", {
     strings: ["Programming" , "Cybersecurity" , "Web development"],
