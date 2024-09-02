@@ -31,7 +31,7 @@
 
     .hamburger {
 	position: relative;
-	left:330px;
+	left:280px;
 	top: -30px;
         cursor: pointer;
         display: flex;
