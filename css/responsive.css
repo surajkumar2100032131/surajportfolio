@@ -41,7 +41,7 @@
 
     .hamburger {
 		position: relative;
-		left:330px;
+		left:320px;
 		top: -20px;
         cursor: pointer;
         display: flex;
@@ -65,7 +65,7 @@
         padding: 2rem 0.5rem;
 		width: 415px;
 		position: relative;
-		top:14px;
+		top:58px;
     }
 	.greet-heading{
 		font-size: 1.8rem;
@@ -165,16 +165,8 @@
 		left:-200px;
 	}
 
-	.arrow-container{
-		position: relative;
-		right: 361px;
-		top:203px;
-	}
-	.arrow-container1{
-		position: relative;
-		right: -880px;
-		top:200px;
-	}
+	
+	
     .skills-container {
         grid-template-columns: 1fr 1fr;
         padding: 1rem;
