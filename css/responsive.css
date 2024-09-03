@@ -1,21 +1,26 @@
-@media screen and (max-width: 856px) {
 
+@media screen and (max-width: 856px) {
+	html, body{
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+	
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 0 2rem;
-	position: fixed;
-	top:-30px;
+		position: fixed;
+		top:-20px;
 
     }
 
     .logo, .menu {
         padding: 0;
     }
-.logoimg{
-	position: relative;
-	top:25px;
-}
+	.logoimg{
+		position: relative;
+		top:20px;
+	}
     /* Hide the menu items by default */
     .menu {
         width: 100%;
@@ -35,9 +40,9 @@
     }
 
     .hamburger {
-	position: relative;
-	left:310px;
-	top: -10px;
+		position: relative;
+		left:330px;
+		top: -20px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -57,14 +62,58 @@
     }
 
     .intro {
-        padding: 2rem 1rem;
+        padding: 2rem 0.5rem;
+		width: 415px;
+		position: relative;
+		top:14px;
     }
+	.greet-heading{
+		font-size: 1.8rem;
+		position: relative;
+		top: 25px;
+	}
+	.my-heading{
+		font-size: 2rem;
+		position: relative;
+		top:10px;
+	}
 
-    .aboutheading, .myheading-2, .skills-header, .myheading-4, .myheading-5, .myheading-6 {
+	.responsive{
+		position: relative;
+		bottom: 70px;
+		width: 55%;
+		height: auto;
+		border-top-left-radius: 600px;
+		border-top-right-radius: 600px;
+		border-bottom-left-radius: 600px;
+		border-bottom-right-radius: 600px;
+	  
+	}
+
+	.intro-sci{
+		position: relative;
+		top: -34px;
+	}
+	.btn-box{
+		position: relative;
+		top: -30px;
+	}
+    .aboutheading, .myheading-2, .skills-header, .myheading-5 {
         left: 0;
         text-align: center;
     }
-
+	.myheading-4{
+		left:60px;
+		text-align: center;
+	}
+	.myheading-6 {
+		margin-top: 5%;
+		margin-bottom: 1%;
+		font-size: 2.5rem;
+		position: relative;
+		left:-209px;
+		text-align: center;
+	}
     .text-content {
         max-width: 100%;
         left: 0;
@@ -95,10 +144,37 @@
         left: 0 !important;
     }
 
-    .timeline, .experience-track {
-        padding: 0 1rem;
-    }
+    .timeline{
+		padding: 0 1rem;
+		position: relative;
+		left:-50px;
+	}
 
+	.experience-track {
+        padding: 0 0.5rem;
+		position: relative;
+		left:199px;
+    }
+	.experience-track .experience-2 {
+		position: relative;
+		left:-200px;
+	}
+
+	.experience-track .experience-4 {
+		position: relative;
+		left:-200px;
+	}
+
+	.arrow-container{
+		position: relative;
+		right: 361px;
+		top:203px;
+	}
+	.arrow-container1{
+		position: relative;
+		right: -880px;
+		top:200px;
+	}
     .skills-container {
         grid-template-columns: 1fr 1fr;
         padding: 1rem;
@@ -106,6 +182,8 @@
 
     .project12 {
         max-width: 100%;
+		position: relative;
+		left: -39px;
     }
 
     .hero {
@@ -117,4 +195,13 @@
         position: static;
         margin: 2rem 0 0;
     }
+	.Contact{
+		width: 824px;
+    	height: 540px;
+	}
+	#my-details-container{
+		position: relative;
+		top: 299px;
+		right: 384px;
+	}
 }
