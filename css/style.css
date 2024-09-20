@@ -15,6 +15,11 @@ body {
 .logo{
   margin-top:10px;
 }
+.logoimg{
+  position: relative;
+  right: 35px;
+}
+
 /* Header Navbar Styles */
 .header{
 	position: fixed;
