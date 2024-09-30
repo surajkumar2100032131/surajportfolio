@@ -1014,6 +1014,69 @@ body {
   background-color: #00080e;
 }
 
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  transform: scale(0);
+  transition: transform 0.4s ease;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content.show {
+  transform: scale(1);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
+
+
 /* contactus */
 
 .myheading-6{
