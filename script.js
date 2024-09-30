@@ -196,3 +196,39 @@ function sendMail() {
     return true;
 }
 
+//certificate view
+
+function openCertificate(url) {
+    const modal = document.getElementById('certificateModal');
+    const modalContent = document.getElementById('modalContent');
+
+
+    document.getElementById('certificateFrame').src = url;
+
+    modal.style.display = 'flex';
+    setTimeout(() => {
+        modal.classList.add('show');
+        modalContent.classList.add('show');
+    }, 10); 
+}
+
+function closeModal() {
+    const modal = document.getElementById('certificateModal');
+    const modalContent = document.getElementById('modalContent');
+
+
+    modal.classList.remove('show');
+    modalContent.classList.remove('show');
+
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.getElementById('certificateFrame').src = ''; 
+    }, 400); 
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('certificateModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+};
