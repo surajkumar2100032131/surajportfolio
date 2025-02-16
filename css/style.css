@@ -566,6 +566,17 @@ body {
 /*project timeline*/
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+
+.projects{
+  margin-top:-4%;
+}
+.projects-header{
+  margin-top: 5%;
+  margin-bottom: 0.1%;
+  font-size: 2.5rem;
+  position:relative;
+  left:645px;
+}
 .project1{
   position: relative;
   left:30px;
@@ -586,6 +597,7 @@ body {
   width: 100%;
   border-radius: 5%;
   border: 5px solid #ff0000;
+  margin-top: 3%;
 
 }
 
