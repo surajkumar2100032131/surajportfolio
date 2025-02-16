@@ -98,7 +98,7 @@
 		position: relative;
 		top: -30px;
 	}
-    .aboutheading, .myheading-2, .skills-header, .myheading-5 {
+    .aboutheading, .myheading-2, .skills-header, .projects-header, .myheading-5 {
         left: 0;
         text-align: center;
     }
