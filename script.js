@@ -7,7 +7,7 @@ function toggleMenu() {
 
 //home
 var typed = new Typed(".text", {
-    strings: ["Programming" , "Cybersecurity" , "Web development"],
+    strings: ["Programming" , "Java" , "Web development"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
