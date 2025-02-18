@@ -44,13 +44,6 @@ const observers = new IntersectionObserver(entries => {
 containers1.forEach(container => {
     observers.observe(container);
 });
-//project timeline
-$(".hover").mouseleave(
-    function() {
-      $(this).removeClass("hover");
-    }
-  );
-
 //Experiences timeline
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -77,62 +70,7 @@ function openCertificate(url) {
 
 // contact us
 
-// function sendMail() {
-//     var params = {
-//         name: document.getElementById("name").value,
-//         email: document.getElementById("email").value,
-//         message: document.getElementById("message").value,
-//     };
-//     const serviceID = "service_6d4wsu7";
-//     const templateID = "template_w047wkj";
-//     const emailField = document.getElementById("email");
-//     const email = emailField.value;
-//     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-//     // Function to show custom alert
-//     function showAlert(message) {
-//         var modal = document.getElementById("customAlert");
-//         var alertMessage = document.getElementById("alertMessage");
-//         var closeButton = document.getElementById("closeButton");
-
-//         alertMessage.textContent = message;
-//         modal.style.display = "flex";
-
-//         closeButton.onclick = function() {
-//             modal.style.display = "none";
-//         };
-
-//         window.onclick = function(event) {
-//             if (event.target == modal) {
-//                 modal.style.display = "none";
-//             }
-//         };
-//     }
-
-//     if (!emailPattern.test(email)) {
-//         showAlert("Your email is not correct");
-//         return false;
-//     }
-
-//     emailjs.send(serviceID, templateID, params)
-//         .then(
-//             res => {
-//                 document.getElementById("name").value = "";
-//                 document.getElementById("email").value = "";
-//                 document.getElementById("message").value = "";
-//                 console.log(res);
-//                 showAlert("Your message was sent successfully!");
-//             }
-//         )
-//         .catch(err => {
-//             console.error(err);
-//             showAlert("There was an error sending your message. Please try again.");
-//         });
-
-//     return true;
-// }
-
-// project
 
 function sendMail() {
     var params = {
@@ -232,3 +170,86 @@ window.onclick = function(event) {
         closeModal();
     }
 };
+
+// background canvas sparkling
+
+
+const canvas = document.getElementById('sparkCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function updateCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = document.documentElement.scrollHeight; // Full scroll height
+            particles = [];
+            createParticles();
+        }
+
+        let particles = [];
+
+        class Particle {
+            constructor(x, y, size, speedX, speedY, opacity) {
+                this.x = x;
+                this.y = y;
+                this.size = size;
+                this.speedX = speedX;
+                this.speedY = speedY;
+                this.opacity = opacity;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.opacity -= 0.005;
+                if (this.opacity <= 0) {
+                    this.reset();
+                }
+            }
+
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = (Math.random() - 0.5) * 1;
+                this.speedY = (Math.random() - 0.5) * 1;
+                this.opacity = Math.random() * 0.5 + 0.5;
+            }
+
+            draw() {
+                ctx.globalAlpha = this.opacity;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = "skyblue";
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            }
+        }
+
+        function createParticles() {
+            const totalParticles = Math.floor((canvas.width * canvas.height) / 5000); // Adjust density dynamically
+            for (let i = 0; i < totalParticles; i++) {
+                let x = Math.random() * canvas.width;
+                let y = Math.random() * canvas.height;
+                let size = Math.random() * 3 + 1;
+                let speedX = (Math.random() - 0.5) * 1;
+                let speedY = (Math.random() - 0.5) * 1;
+                let opacity = Math.random() * 0.5 + 0.5;
+
+                particles.push(new Particle(x, y, size, speedX, speedY, opacity));
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+
+            requestAnimationFrame(animateParticles);
+        }
+
+        window.addEventListener("resize", updateCanvasSize);
+        window.addEventListener("scroll", () => canvas.height = document.documentElement.scrollHeight);
+
+        updateCanvasSize();
+        animateParticles();
