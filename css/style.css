@@ -868,9 +868,10 @@ body {
         opacity: 0;
     }
 }
-/*arrow*/
-.arrow-link {
+/*buuton*/
+.arrow-link button {
   text-decoration: none;
+  cursor:pointer;
   color: #fff;
   font-weight: bold;
   display: inline-flex;
@@ -882,8 +883,9 @@ body {
   position: relative;
   left:350px;
 }
-.arrow-link1 {
+.arrow-link1 button {
   text-decoration: none;
+  cursor: pointer;
   color: #fff;
   font-weight: bold;
   display: inline-flex;
@@ -896,47 +898,13 @@ body {
   right:900px;
 }
 
-.arrow-link:hover {
-  background-color: #2980b9;
+.arrow-link button:hover {
+  background-color: #012d4a;
 }
-.arrow-link1:hover {
-  background-color: #2980b9;
-}
-
-.arrow-link span {
-  margin-right: 20px;
+.arrow-link1 button:hover {
+  background-color: #012d4a;
 }
 
-.arrow-link1 span {
-  margin-right: 20px;
-  position: relative;
-  left:30px;
-}
-.arrow {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  transition: transform 0.3s ease;
-}
-.arrow1 {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 15px solid #fff;
-  transition: transform 0.3s ease;
-  position: relative;
-  right:60px;
-}
-
-.arrow-link:hover .arrow {
-  transform: translateX(5px);
-}
-.arrow-link1:hover .arrow1 {
-  transform: translateX(5px);
-}
 
 /*certificates*/
 .myheading-5{
@@ -1179,6 +1147,7 @@ textarea {
 
 #contact-form button[type="submit"] {
   background: transparent;
+  cursor:pointer;
   font-size: 0.95rem;
   border: 2px solid white;
   margin-top: -1%;
