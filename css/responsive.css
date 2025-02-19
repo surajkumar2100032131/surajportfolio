@@ -156,6 +156,9 @@
 		left:199px;
 		border-radius:50%;
     }
+	.experience-track .experience-1 .experience-3 {
+		border-radius:50%;
+	}
 	.experience-track .experience-2 {
 		position: relative;
 		left:-200px;
