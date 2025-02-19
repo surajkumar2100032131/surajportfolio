@@ -720,7 +720,7 @@ canvas {
     left:220px;
     margin-top: 3%;
     position: relative;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 
 .experience-track .experience-1 {
@@ -728,14 +728,14 @@ canvas {
   position: relative;
   right:200px;
   box-shadow: 0 0 10px rgba(229, 222, 222, 0.1);
-  border-radius: 8px;
+  border-radius: 50%;
 }
 .experience-track .experience-2 {
   max-width: 650px;
   position: relative;
   left: 500px;
   box-shadow: 0 0 10px rgba(241, 236, 236, 0.1);
-  border-radius: 8px;
+  border-radius: 50%;
 }
 
 .experience-track .experience-3 {
@@ -743,7 +743,7 @@ canvas {
   position: relative;
   right:200px;
   box-shadow: 0 0 10px rgba(241, 236, 236, 0.1);
-  border-radius: 8px;
+  border-radius: 50%;
 }
 
 .experience-track .experience-4 {
@@ -751,7 +751,7 @@ canvas {
   position: relative;
   left: 500px;
   box-shadow: 0 0 10px rgba(241, 236, 236, 0.1);
-  border-radius: 8px;
+  border-radius: 50%;
 }
 
 .experience-item {
