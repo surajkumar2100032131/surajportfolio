@@ -156,19 +156,15 @@
 		left:199px;
 		
     }
-	.experience-track .experience-1 {
-		border-radius:50%;
-	}
+	
 	.experience-track .experience-2 {
 		position: relative;
-		left:-200px;
-		border-radius:50%;
+		left:-200px;	
 	}
 
 	.experience-track .experience-4 {
 		position: relative;
 		left:-200px;
-		border-radius:50%;
 	}
 
 	
