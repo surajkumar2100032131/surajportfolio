@@ -80,7 +80,7 @@
 
 	.responsive{
 		position: relative;
-		bottom: 70px;
+		bottom: 35px;
 		width: 55%;
 		height: auto;
 		border-top-left-radius: 600px;
@@ -89,6 +89,10 @@
 		border-bottom-right-radius: 600px;
 	  
 	}
+	.intro h4 {
+    		font-size: 20px;
+    		font-weight: 500;
+}
 
 	.intro-sci{
 		position: relative;
