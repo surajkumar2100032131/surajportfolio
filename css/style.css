@@ -378,16 +378,16 @@ canvas {
 
 .container.left .content {
   margin-left: 30px;
-  border-radius: 6px 0 0 6px;
+  border-radius: 6px;
 }
 .container1.lefts .content {
   margin-left: 30px;
-  border-radius: 6px 0 0 6px;
+  border-radius: 6px;
 }
 
 .container.right .content {
   margin-right: 30px;
-  border-radius: 0 6px 6px 0;
+  border-radius: 6px;
 }
 
 .content img {
