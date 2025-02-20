@@ -256,7 +256,7 @@ canvas {
   left:630px;
 }
   .about-container {
-    background: linear-gradient(135deg, rgb(109, 8, 132), rgb(78, 1, 83));
+    background: linear-gradient(135deg, #171212, rgb(78, 1, 83));
     padding: 30px;
     border-radius: 10px;
     display: flex;
