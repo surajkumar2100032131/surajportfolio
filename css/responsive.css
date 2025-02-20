@@ -153,7 +153,16 @@
 		position: relative;
 		left:-50px;
 	}
-
+	.content1 h3 {
+    		margin: 0;
+    		font-size: 1rem;
+    		color: #333;
+	}
+.content1 .fort {
+  		margin: 5px 0;
+  		color: #b70303;
+  		font-size: 0.9rem;
+}
 	.experience-track {
         padding: 0 0.5rem;
 		position: relative;
