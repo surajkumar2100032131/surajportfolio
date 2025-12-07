@@ -7,7 +7,7 @@ function toggleMenu() {
 
 //home
 var typed = new Typed(".text", {
-    strings: ["Programming" , "Web development" , "Customer communication" , "Relationship building"],
+    strings: ["Programming" , "Web development" , "Interaction" , "Relationship building"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
@@ -253,5 +253,6 @@ const canvas = document.getElementById('sparkCanvas');
 
         updateCanvasSize();
         animateParticles();
+
 
 
